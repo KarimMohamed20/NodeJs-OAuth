@@ -8,8 +8,8 @@ const GoogleStrategy = require('passport-google-oauth')
         done(null, user);
     });
     passport.use(new GoogleStrategy({
-            clientID: '706267783118-a5ro7pfof6gdijj1keru9moq3jc3jf9t.apps.googleusercontent.com',
-            clientSecret: 'B5RzjXMA1GIWCH8VlzbQlDjd',
+            clientID: 'ClientID',
+            clientSecret: 'ClientSecret',
             callbackURL: '/auth/google/callback'
         },
         (token, refreshToken, profile, done) => {
